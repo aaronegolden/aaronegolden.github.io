@@ -271,6 +271,9 @@
             count++;
         }
     }
+
+    // TODO: Consider obligated *reverse* moves if no forward moves are available.
+
     return count;
   }
 
