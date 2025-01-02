@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Senet</title>
+<style>
+  /* Basic CSS styling for the game board */
+  #gameBoard {
+    width: 750px;
+    height: 225px;
+    border: 1px solid black;
+    position: relative;
+  }
+
+  .square {
+    width: 75px;
+    height: 75px;
+    border: 1px solid black;
+    float: left;
+    text-align: center;
+    font-size: 20px;
+    line-height: 75px;
+    box-sizing: border-box;
+    user-select: none;
+    align-items: center;
+    justify-content: center; 
+    display: flex;
+  }
+
+  .white {
+    background-color: white;
+  }
+
+  .red {
+    background-color: red;
+  }
+
+  .yellow {
+    background-color: yellow;
+  }
+
+  .green {
+    background-color: rgb(8, 225, 110);
+  }
+
+  .blue {
+    background-color: blue;
+  }
+  
+  .highlighted {
+    border: 8px solid black
+  }
+
+
+  /* Token styles */
+  .token {
+    width: 50px; /* Adjust size as needed */
+    height: 50px;
+    border-radius: 50%; /* Make them circular */
+    position: relative; 
+  }
+
+  .protected {
+    border: 2px solid gold;
+  }
+
+  .block {
+    border: 8px solid rgb(0, 255, 55);
+  }
+
+  .player1-token {
+    background-color: #D2B48C; /* Light brown */
+  }
+
+  .player2-token {
+    background-color: #104110; /* Dark green */
+  }
+
+  .available {
+    background-color: magenta;
+  }
+</style>
+</head>
+<body>
+<h1>Senet</h1>
+<div id="gameBoard"></div>
+<div id="diceRoll"></div>
+<div id="currentPlayer"></div>
+<button type="button" onclick="NewGame();">Set Up Game</button> 
+<button type="button" onclick="SetUpTurn();">Start!</button>
+<input type="checkbox" id="autoPlay1"> Automatic Player 1
+<input type="checkbox" id="autoPlay1"> Automatic Player 2
+<script src="main.js"></script>
+</body>
+</html>
