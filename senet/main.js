@@ -402,3 +402,5 @@
 
     squares[10].appendChild(player2Tokens[4]);
 }
+
+NewGame();
