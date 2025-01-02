@@ -396,11 +396,11 @@
     for (let i = 0; i < 4; i++) {
         squares[2 * i + 1].appendChild(player2Tokens[i]);
     }
+    squares[10].appendChild(player2Tokens[4]);
 
+    HighlightAvailableMoves();
     HighlightProtected();
     HighlightBlocks();
-
-    squares[10].appendChild(player2Tokens[4]);
 }
 
 NewGame();
