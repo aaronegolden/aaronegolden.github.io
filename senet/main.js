@@ -292,7 +292,7 @@
             if (isAllowedMove(currentPlayer, i, currentRoll)) {
                 setTimeout(function() {
                     PerformMove(currentPlayer, i, currentRoll);
-                }, 10);
+                }, 500);
                 return;
             }
         }
