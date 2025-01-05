@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Astroids Clone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="hud" class="hud"></div>
+  <canvas id="gameCanvas"></canvas>
+  <div class="high-score-table" id="highScoreTable" style="display: none;">
+    <h2>Game Over</h2>
+    <h3 id="finalScore">Score: 0</h3>
+    <h3 id="enterNameHeader">Enter Your Name:</h3>
+    <input type="text" id="playerNameInput" placeholder="Your Name" onkeypress="handleKeyPress(event)">
+    <h3>High Scores:</h3>
+    <ul id="scoreList"></ul>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

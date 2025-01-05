@@ -1,0 +1,42 @@
+body {
+    background-color: black;
+    margin: 0;
+    overflow: hidden;
+}
+
+.hud{
+    color: white;
+    font-family: monospace;
+}
+
+canvas {
+    display: block;
+}
+
+.high-score-table {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+  }
+  .high-score-table ul {
+    text-align: left; 
+  }
+  #scoreList {
+    list-style: none;
+    padding: 0; 
+  }
+  #playerNameInput {
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    width: 150px; 
+  }
